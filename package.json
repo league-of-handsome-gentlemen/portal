@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "parcel build --public-url /league-of-handsome-gentlemen",
+    "build": "parcel build --public-url /portal",
     "start": "parcel --open"
   },
   "author": "",
