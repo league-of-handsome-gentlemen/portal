@@ -1,0 +1,24 @@
+{
+  "name": "portal",
+  "source": "src/index.html",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "parcel build --public-url /league-of-handsome-gentlemen",
+    "start": "parcel --open"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-amplify": "^6.8.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "parcel": "^2.12.0",
+    "process": "^0.11.10",
+    "typescript": "^5.6.3"
+  }
+}
