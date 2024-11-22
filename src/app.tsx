@@ -5,7 +5,7 @@ import { PrivateRoutes } from './private-routes';
 
 export const App = () => (
   <div className="container">
-    <BrowserRouter>
+    <BrowserRouter basename='/portal'>
       <Routes>
         <Route element={<PrivateRoutes />}>
           <Route path='/' element={<h1>Home</h1>}></Route>
