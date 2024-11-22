@@ -1,0 +1,11 @@
+#root {
+  min-height: 100vh;
+}
+
+#login-page {
+  height: 100vh;
+}
+
+.is-height-100 {
+  height: 100%;
+}
