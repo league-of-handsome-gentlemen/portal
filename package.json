@@ -5,7 +5,7 @@
   "description": "",
   "scripts": {
     "build": "parcel build --public-url /portal",
-    "start": "parcel --open"
+    "start": "parcel"
   },
   "author": "",
   "license": "ISC",

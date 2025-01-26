@@ -3,13 +3,12 @@ import { LoginPage } from './login/login-page';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { PrivateRoutes } from './private-routes';
 
-export const App = () => {
-  const { NODE_ENV } = process.env;
-  const baseName = NODE_ENV === 'production' ? '/portal' : '/';
+const { BASE_NAME } = process.env;
 
+export const App = () => {
   return (
     <div className="container">
-      <BrowserRouter basename={baseName}>
+      <BrowserRouter basename={BASE_NAME}>
         <Routes>
           <Route element={<PrivateRoutes />}>
             <Route path='/' element={<h1>Home</h1>}></Route>
