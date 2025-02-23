@@ -11,8 +11,8 @@ interface Props {
 export const Login = ({ onLoginSubmit, isFormDisabled, errorType }: Props) => {
   const handleSubmit = (event: React.SyntheticEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const emailElement = event.currentTarget.elements['email'];
-    const passwordElement = event.currentTarget.elements['password'];
+    const emailElement = event.currentTarget.elements.namedItem('email') as HTMLInputElement;
+    const passwordElement = event.currentTarget.elements.namedItem('password') as HTMLInputElement;
     onLoginSubmit(emailElement.value, passwordElement.value);
   };
 

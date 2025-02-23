@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { ErrorType } from './login-page';
 
 interface Props {

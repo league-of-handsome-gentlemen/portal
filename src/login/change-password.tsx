@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { SyntheticEvent } from 'react';
 import { ErrorType } from './login-page';
 import { LoginError } from './login-error';
 
@@ -9,10 +9,10 @@ interface Props {
 }
 
 export const ChangePassword = ({ onPasswordChangeSubmit, isFormDisabled, errorType }: Props) => {
-  const handleSubmit = (event: React.SyntheticEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: SyntheticEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const passwordElement = event.currentTarget.elements['password'];
-    const passwordConfirmElement = event.currentTarget.elements['password-confirm'];
+    const passwordElement = event.currentTarget.elements.namedItem('password') as HTMLInputElement;
+    const passwordConfirmElement = event.currentTarget.elements.namedItem('password-confirm') as HTMLInputElement;
     onPasswordChangeSubmit(passwordElement.value, passwordConfirmElement.value);
   };
 

@@ -1,13 +1,13 @@
-import * as React from "react";
 import { createRoot } from "react-dom/client";
 import { App } from "./app";
 import { Amplify } from 'aws-amplify';
+import './styles.css';
 
 Amplify.configure({
   Auth: {
     Cognito: {
-      userPoolId: 'us-east-1_ZV25h2yxa',
-      userPoolClientId: '4lmqpf0c5j0ftkng7512df869b'
+      userPoolId: 'us-east-1_fn14642b3',
+      userPoolClientId: '7t96getqfbbsatb8p2pm2p9b0p'
     },
   }
 });

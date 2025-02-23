@@ -20,7 +20,7 @@ export const LoginPage = () => {
     });
   }, []);
   
-  const handleError = (e) => {
+  const handleError = (e: Error) => {
     setIsLoggingIn(false);
 
     switch (e.name) {
